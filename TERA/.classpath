@@ -1,60 +1,86 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
-	<classpathentry kind="src" output="target/classes" path="src/main/java">
-		<attributes>
-			<attribute name="optional" value="true"/>
-			<attribute name="maven.pomderived" value="true"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry including="**/*.java" kind="src" path="src/main/resources"/>
-	<classpathentry kind="src" output="target/test-classes" path="src/test/java">
-		<attributes>
-			<attribute name="optional" value="true"/>
-			<attribute name="maven.pomderived" value="true"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry including="**/*.java" kind="src" output="target/test-classes" path="src/test/resources"/>
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.6">
-		<attributes>
-			<attribute name="maven.pomderived" value="true"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry kind="con" path="org.eclipse.m2e.MAVEN2_CLASSPATH_CONTAINER">
-		<attributes>
-			<attribute name="maven.pomderived" value="true"/>
-			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry kind="lib" path="D:/Softwares to share/SpringJavaArchiveFiles/activation-1.1.jar"/>
-	<classpathentry kind="lib" path="D:/Softwares to share/SpringJavaArchiveFiles/aopalliance-1.0.jar"/>
-	<classpathentry kind="lib" path="D:/Softwares to share/SpringJavaArchiveFiles/commons-dbcp-1.4.jar"/>
-	<classpathentry kind="lib" path="D:/Softwares to share/SpringJavaArchiveFiles/commons-lang-2.3.jar"/>
-	<classpathentry kind="lib" path="D:/Softwares to share/SpringJavaArchiveFiles/commons-logging-1.1.3.jar"/>
-	<classpathentry kind="lib" path="D:/Softwares to share/SpringJavaArchiveFiles/commons-pool-1.5.4.jar"/>
-	<classpathentry kind="lib" path="D:/Softwares to share/SpringJavaArchiveFiles/hibernate-validator-4.0.2.GA.jar"/>
-	<classpathentry kind="lib" path="D:/Softwares to share/SpringJavaArchiveFiles/javassist-3.12.1.GA.jar"/>
-	<classpathentry kind="lib" path="D:/Softwares to share/SpringJavaArchiveFiles/jaxb-api-2.1.jar"/>
-	<classpathentry kind="lib" path="D:/Softwares to share/SpringJavaArchiveFiles/jaxb-impl-2.1.3.jar"/>
-	<classpathentry kind="lib" path="D:/Softwares to share/SpringJavaArchiveFiles/log4j-1.2.15.jar"/>
-	<classpathentry kind="lib" path="D:/Softwares to share/SpringJavaArchiveFiles/mysql-connector-java-5.1.9.jar"/>
-	<classpathentry kind="lib" path="D:/Softwares to share/SpringJavaArchiveFiles/servlet-api-2.5.jar"/>
-	<classpathentry kind="lib" path="D:/Softwares to share/SpringJavaArchiveFiles/slf4j-api-1.5.6.jar"/>
-	<classpathentry kind="lib" path="D:/Softwares to share/SpringJavaArchiveFiles/spring-aop-4.0.5.RELEASE.jar"/>
-	<classpathentry kind="lib" path="D:/Softwares to share/SpringJavaArchiveFiles/spring-beans-4.0.5.RELEASE.jar"/>
-	<classpathentry kind="lib" path="D:/Softwares to share/SpringJavaArchiveFiles/spring-context-4.0.5.RELEASE.jar"/>
-	<classpathentry kind="lib" path="D:/Softwares to share/SpringJavaArchiveFiles/spring-context-support-4.0.5.RELEASE.jar"/>
-	<classpathentry kind="lib" path="D:/Softwares to share/SpringJavaArchiveFiles/spring-core-4.0.5.RELEASE.jar"/>
-	<classpathentry kind="lib" path="D:/Softwares to share/SpringJavaArchiveFiles/spring-expression-4.0.5.RELEASE.jar"/>
-	<classpathentry kind="lib" path="D:/Softwares to share/SpringJavaArchiveFiles/spring-jdbc-4.0.5.RELEASE.jar"/>
-	<classpathentry kind="lib" path="D:/Softwares to share/SpringJavaArchiveFiles/spring-ldap-1.3.1.RELEASE-all.jar"/>
-	<classpathentry kind="lib" path="D:/Softwares to share/SpringJavaArchiveFiles/spring-orm-4.0.5.RELEASE.jar"/>
-	<classpathentry kind="lib" path="D:/Softwares to share/SpringJavaArchiveFiles/spring-oxm-4.0.5.RELEASE.jar"/>
-	<classpathentry kind="lib" path="D:/Softwares to share/SpringJavaArchiveFiles/spring-tx-4.0.5.RELEASE.jar"/>
-	<classpathentry kind="lib" path="D:/Softwares to share/SpringJavaArchiveFiles/spring-web-4.0.5.RELEASE.jar"/>
-	<classpathentry kind="lib" path="D:/Softwares to share/SpringJavaArchiveFiles/spring-webmvc-4.0.5.RELEASE.jar"/>
-	<classpathentry kind="lib" path="D:/Softwares to share/SpringJavaArchiveFiles/spring-webmvc-portlet-4.0.5.RELEASE.jar"/>
-	<classpathentry kind="lib" path="D:/Softwares to share/SpringJavaArchiveFiles/standard-1.1.2.jar"/>
-	<classpathentry kind="lib" path="D:/Softwares to share/SpringJavaArchiveFiles/stax-api-1.0-2.jar"/>
-	<classpathentry kind="lib" path="D:/Softwares to share/SpringJavaArchiveFiles/validation-api-1.0.0.GA.jar"/>
-	<classpathentry kind="output" path="target/classes"/>
+  <classpathentry kind="src" path="src/test/java" output="target/test-classes" including="**/*.java"/>
+  <classpathentry kind="src" path="src/test/resources" output="target/test-classes" excluding="**/*.java"/>
+  <classpathentry kind="src" path="src/main/java" including="**/*.java"/>
+  <classpathentry kind="src" path="src/main/resources" excluding="**/*.java"/>
+  <classpathentry kind="output" path="target/classes"/>
+  <classpathentry kind="var" path="M2_REPO/javax/inject/javax.inject/1/javax.inject-1.jar" sourcepath="M2_REPO/javax/inject/javax.inject/1/javax.inject-1-sources.jar">
+    <attributes>
+      <attribute value="jar:file:/C:/Users/sy00356527/.m2/repository/javax/inject/javax.inject/1/javax.inject-1-javadoc.jar!/" name="javadoc_location"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry kind="var" path="M2_REPO/javax/servlet/servlet-api/2.5/servlet-api-2.5.jar" sourcepath="M2_REPO/javax/servlet/servlet-api/2.5/servlet-api-2.5-sources.jar"/>
+  <classpathentry kind="var" path="M2_REPO/javax/servlet/jsp/jsp-api/2.1/jsp-api-2.1.jar" sourcepath="M2_REPO/javax/servlet/jsp/jsp-api/2.1/jsp-api-2.1-sources.jar"/>
+  <classpathentry kind="var" path="M2_REPO/javax/servlet/jstl/1.2/jstl-1.2.jar" sourcepath="M2_REPO/javax/servlet/jstl/1.2/jstl-1.2-sources.jar"/>
+  <classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+  <classpathentry kind="var" path="M2_REPO/org/springframework/spring-context/3.1.1.RELEASE/spring-context-3.1.1.RELEASE.jar" sourcepath="M2_REPO/org/springframework/spring-context/3.1.1.RELEASE/spring-context-3.1.1.RELEASE-sources.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/springframework/spring-aop/3.1.1.RELEASE/spring-aop-3.1.1.RELEASE.jar" sourcepath="M2_REPO/org/springframework/spring-aop/3.1.1.RELEASE/spring-aop-3.1.1.RELEASE-sources.jar"/>
+  <classpathentry kind="var" path="M2_REPO/aopalliance/aopalliance/1.0/aopalliance-1.0.jar" sourcepath="M2_REPO/aopalliance/aopalliance/1.0/aopalliance-1.0-sources.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/springframework/spring-asm/3.1.1.RELEASE/spring-asm-3.1.1.RELEASE.jar" sourcepath="M2_REPO/org/springframework/spring-asm/3.1.1.RELEASE/spring-asm-3.1.1.RELEASE-sources.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/springframework/spring-beans/3.1.1.RELEASE/spring-beans-3.1.1.RELEASE.jar" sourcepath="M2_REPO/org/springframework/spring-beans/3.1.1.RELEASE/spring-beans-3.1.1.RELEASE-sources.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/springframework/spring-core/3.1.1.RELEASE/spring-core-3.1.1.RELEASE.jar" sourcepath="M2_REPO/org/springframework/spring-core/3.1.1.RELEASE/spring-core-3.1.1.RELEASE-sources.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/springframework/spring-expression/3.1.1.RELEASE/spring-expression-3.1.1.RELEASE.jar" sourcepath="M2_REPO/org/springframework/spring-expression/3.1.1.RELEASE/spring-expression-3.1.1.RELEASE-sources.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/springframework/spring-webmvc/3.1.1.RELEASE/spring-webmvc-3.1.1.RELEASE.jar" sourcepath="M2_REPO/org/springframework/spring-webmvc/3.1.1.RELEASE/spring-webmvc-3.1.1.RELEASE-sources.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/springframework/spring-context-support/3.1.1.RELEASE/spring-context-support-3.1.1.RELEASE.jar" sourcepath="M2_REPO/org/springframework/spring-context-support/3.1.1.RELEASE/spring-context-support-3.1.1.RELEASE-sources.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/springframework/spring-web/3.1.1.RELEASE/spring-web-3.1.1.RELEASE.jar" sourcepath="M2_REPO/org/springframework/spring-web/3.1.1.RELEASE/spring-web-3.1.1.RELEASE-sources.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/aspectj/aspectjrt/1.6.10/aspectjrt-1.6.10.jar" sourcepath="M2_REPO/org/aspectj/aspectjrt/1.6.10/aspectjrt-1.6.10-sources.jar">
+    <attributes>
+      <attribute value="jar:file:/C:/Users/sy00356527/.m2/repository/org/aspectj/aspectjrt/1.6.10/aspectjrt-1.6.10-javadoc.jar!/" name="javadoc_location"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry kind="var" path="M2_REPO/org/slf4j/slf4j-api/1.6.6/slf4j-api-1.6.6.jar" sourcepath="M2_REPO/org/slf4j/slf4j-api/1.6.6/slf4j-api-1.6.6-sources.jar">
+    <attributes>
+      <attribute value="jar:file:/C:/Users/sy00356527/.m2/repository/org/slf4j/slf4j-api/1.6.6/slf4j-api-1.6.6-javadoc.jar!/" name="javadoc_location"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry kind="var" path="M2_REPO/org/slf4j/jcl-over-slf4j/1.6.6/jcl-over-slf4j-1.6.6.jar" sourcepath="M2_REPO/org/slf4j/jcl-over-slf4j/1.6.6/jcl-over-slf4j-1.6.6-sources.jar">
+    <attributes>
+      <attribute value="jar:file:/C:/Users/sy00356527/.m2/repository/org/slf4j/jcl-over-slf4j/1.6.6/jcl-over-slf4j-1.6.6-javadoc.jar!/" name="javadoc_location"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry kind="var" path="M2_REPO/org/slf4j/slf4j-log4j12/1.6.6/slf4j-log4j12-1.6.6.jar" sourcepath="M2_REPO/org/slf4j/slf4j-log4j12/1.6.6/slf4j-log4j12-1.6.6-sources.jar">
+    <attributes>
+      <attribute value="jar:file:/C:/Users/sy00356527/.m2/repository/org/slf4j/slf4j-log4j12/1.6.6/slf4j-log4j12-1.6.6-javadoc.jar!/" name="javadoc_location"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry kind="var" path="M2_REPO/log4j/log4j/1.2.15/log4j-1.2.15.jar" sourcepath="M2_REPO/log4j/log4j/1.2.15/log4j-1.2.15-sources.jar"/>
+  <classpathentry kind="var" path="M2_REPO/junit/junit/4.11/junit-4.11.jar" sourcepath="M2_REPO/junit/junit/4.11/junit-4.11-sources.jar">
+    <attributes>
+      <attribute value="jar:file:/C:/Users/sy00356527/.m2/repository/junit/junit/4.11/junit-4.11-javadoc.jar!/" name="javadoc_location"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry kind="var" path="M2_REPO/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar" sourcepath="M2_REPO/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3-sources.jar">
+    <attributes>
+      <attribute value="jar:file:/C:/Users/sy00356527/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3-javadoc.jar!/" name="javadoc_location"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry kind="var" path="M2_REPO/com/googlecode/kiama_2.8.1/1.0.2/kiama_2.8.1-1.0.2.jar" sourcepath="M2_REPO/com/googlecode/kiama_2.8.1/1.0.2/kiama_2.8.1-1.0.2-sources.jar"/>
+  <classpathentry kind="var" path="M2_REPO/jline/jline/0.9.94/jline-0.9.94.jar" sourcepath="M2_REPO/jline/jline/0.9.94/jline-0.9.94-sources.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/scala-tools/testing/scalacheck_2.8.1/1.8/scalacheck_2.8.1-1.8.jar" sourcepath="M2_REPO/org/scala-tools/testing/scalacheck_2.8.1/1.8/scalacheck_2.8.1-1.8-sources.jar">
+    <attributes>
+      <attribute value="jar:file:/C:/Users/sy00356527/.m2/repository/org/scala-tools/testing/scalacheck_2.8.1/1.8/scalacheck_2.8.1-1.8-javadoc.jar!/" name="javadoc_location"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry kind="var" path="M2_REPO/org/scala-tools/testing/test-interface/0.5/test-interface-0.5.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/scalatest/scalatest/1.2/scalatest-1.2.jar" sourcepath="M2_REPO/org/scalatest/scalatest/1.2/scalatest-1.2-sources.jar">
+    <attributes>
+      <attribute value="jar:file:/C:/Users/sy00356527/.m2/repository/org/scalatest/scalatest/1.2/scalatest-1.2-javadoc.jar!/" name="javadoc_location"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry kind="var" path="M2_REPO/org/scala-lang/scala-library/2.8.1/scala-library-2.8.1.jar" sourcepath="M2_REPO/org/scala-lang/scala-library/2.8.1/scala-library-2.8.1-sources.jar">
+    <attributes>
+      <attribute value="jar:file:/C:/Users/sy00356527/.m2/repository/org/scala-lang/scala-library/2.8.1/scala-library-2.8.1-javadoc.jar!/" name="javadoc_location"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry kind="var" path="M2_REPO/com/googlecode/jyield/0.0.6/jyield-0.0.6.jar" sourcepath="M2_REPO/com/googlecode/jyield/0.0.6/jyield-0.0.6-sources.jar">
+    <attributes>
+      <attribute value="jar:file:/C:/Users/sy00356527/.m2/repository/com/googlecode/jyield/0.0.6/jyield-0.0.6-javadoc.jar!/" name="javadoc_location"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry kind="var" path="M2_REPO/asm/asm/3.2/asm-3.2.jar"/>
+  <classpathentry kind="var" path="M2_REPO/asm/asm-analysis/3.2/asm-analysis-3.2.jar"/>
+  <classpathentry kind="var" path="M2_REPO/asm/asm-tree/3.2/asm-tree-3.2.jar"/>
+  <classpathentry kind="var" path="M2_REPO/asm/asm-commons/3.2/asm-commons-3.2.jar"/>
+  <classpathentry kind="var" path="M2_REPO/asm/asm-util/3.2/asm-util-3.2.jar"/>
 </classpath>

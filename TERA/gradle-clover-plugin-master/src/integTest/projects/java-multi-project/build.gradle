@@ -1,0 +1,41 @@
+import com.bmuschko.gradle.clover.CloverPlugin
+
+buildscript {
+    dependencies {
+        classpath files('../../../../build/classes/main')
+    }
+}
+
+apply from: '../deps.gradle'
+
+allprojects {
+    repositories {
+        mavenCentral()
+    }
+
+    if (path != ':project4c') {
+        apply plugin: CloverPlugin
+
+        dependencies {
+            clover deps.clover
+        }
+
+        clover {
+            licenseLocation = rootProject.file('../../../../clover.license').absolutePath
+
+            report {
+                json = true
+                html = true
+                pdf = true
+            }
+        }
+    }
+}
+
+subprojects {
+    apply plugin: 'java'
+
+    dependencies {
+        testCompile deps.junit
+    }
+}
