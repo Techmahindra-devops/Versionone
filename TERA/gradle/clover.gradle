@@ -1,0 +1,16 @@
+buildscript {
+  repositories {
+    maven {
+      url "http://10.53.77.138:8081/nexus/content/groups/public"
+    }
+  }
+  dependencies {
+    classpath "com.bmuschko:gradle-clover-plugin:2.0.1"
+  }
+}
+
+apply plugin: "com.bmuschko.clover"
+
+clover {
+	integrationTestTaskName = 'integrationTest'
+}
